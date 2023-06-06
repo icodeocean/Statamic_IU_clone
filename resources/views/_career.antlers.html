@@ -1,0 +1,37 @@
+<section
+  class="iu-media-text relative scroll-mt-32 md:scroll-mt-36 xl:scroll-mt-32 bg-transparent mt-16 mb-16"
+>
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="flex flex-col rounded-xl space-y-6 lg:space-y-0 lg:space-x-20 lg:items-center lg:flex-row bg-transparent"
+    >
+      {{ if index%2 == 0 }}
+      <div class="w-full lg:w-1/2">{{image}}</div>
+      <div
+        class="w-full lg:w-1/2 flex flex-col space-y-6 px-8 pb-8 lg:py-8 lg:pl-0"
+      >
+        <h2 class="block iu-headline-3 mb-4 font-bold leading-tight">
+          <span class="box-decoration-clone hyphens-auto">{{title}}</span>
+        </h2>
+
+        <div class="wysiwyg">
+          <p>{{text}}</p>
+        </div>
+      </div>
+      {{ /else }}
+      <div
+        class="w-full lg:w-1/2 flex flex-col space-y-6 px-8 pb-8 lg:py-8 lg:pl-0"
+      >
+        <h2 class="block iu-headline-3 mb-4 font-bold leading-tight">
+          <span class="box-decoration-clone hyphens-auto">{{title}}</span>
+        </h2>
+
+        <div class="wysiwyg">
+          <p>{{text}}</p>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2">{{image}}</div>
+      {{/if}}
+    </div>
+  </div>
+</section>

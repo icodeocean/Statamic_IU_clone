@@ -1,0 +1,15 @@
+.accordion {
+  &-item {
+    .accordion-header.is-collapsible {
+      &::after {
+        content: '';
+        background-image: url('/static/icons/font-awesome/plus-light.svg');
+        @apply inline-block absolute h-4 w-4 right-0 bg-no-repeat bg-center bg-cover top-1/2 transform -translate-y-1/2;
+      }
+
+      &.is-open::after {
+        background-image: url('/static/icons/font-awesome/minus-light.svg');
+      }
+    }
+  }
+}

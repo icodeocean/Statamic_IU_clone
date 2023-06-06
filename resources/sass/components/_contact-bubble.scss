@@ -1,0 +1,33 @@
+.contact-bubble-trigger {
+  &:checked {
+    ~ .contact-bubble-popup {
+      @apply block opacity-100;
+    }
+
+    ~ .contact-bubble-overlay {
+      @apply w-screen h-screen bg-opacity-75;
+    }
+
+    ~ label {
+      .open-icon {
+        @apply hidden;
+      }
+
+      .close-icon {
+        @apply inline-block;
+      }
+    }
+  }
+
+  &:not(:checked) {
+    ~ .has-dot::after {
+      content: '';
+      @apply h-4 w-4 absolute right-0 top-0 rounded-full bg-red;
+    }
+
+    ~ .has-dot::before {
+      content: '';
+      @apply h-4 w-4 absolute right-0 top-0 rounded-full bg-red bg-opacity-75 animate-ping;
+    }
+  }
+}

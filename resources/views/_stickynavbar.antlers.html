@@ -1,0 +1,122 @@
+<nav
+  x-data="{
+        menuIsSticky: false,
+        activeItem: 'default',
+        isActive(target) { return this.activeItem === target }
+    }"
+  class="iu-anchor-menu hidden sm:flex sticky xl:top-20 z-40 bg-white border-gray-300 h-16 transition-all duration-300"
+  x-bind:class="{
+        'border-t border-b': !menuIsSticky,
+        'shadow': menuIsSticky,
+        'top-0': !hasCtaButton && !scrollsUp,
+        'top-16': hasCtaButton && !scrollsUp,
+        'top-20': !hasCtaButton && scrollsUp,
+        'top-36': hasCtaButton && scrollsUp
+    }"
+  x-init="activeItem = $el.querySelector('a')?.getAttribute('href')?.replace('#', '')"
+  x-on:scroll.window.passive="menuIsSticky = $root.getBoundingClientRect().top === parseInt(getComputedStyle($root).top)"
+  x-on:area-shown.window="activeItem = $event.detail"
+>
+  <div
+    class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex w-full flex-nowrap overflow-x-auto"
+  >
+    <a
+      href="#overview"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Overview"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Overview"
+      x-bind:class="{ 'border-transparent': !isActive('overview'), 'border-cta': isActive('overview') }"
+      x-cloak
+    >
+      Overview
+    </a>
+    <a
+      href="#study-contents"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Study contents"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Study contents"
+      x-bind:class="{ 'border-transparent': !isActive('study-contents'), 'border-cta': isActive('study-contents') }"
+      x-cloak
+    >
+      Study contents
+    </a>
+    <a
+      href="#admission"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Admission"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Admission"
+      x-bind:class="{ 'border-transparent': !isActive('admission'), 'border-cta': isActive('admission') }"
+      x-cloak
+    >
+      Admission
+    </a>
+    <a
+      href="#careers"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Careers"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Careers"
+      x-bind:class="{ 'border-transparent': !isActive('careers'), 'border-cta': isActive('careers') }"
+      x-cloak
+    >
+      Careers
+    </a>
+    <a
+      href="#student-reviews"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Student reviews"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Student reviews"
+      x-bind:class="{ 'border-transparent': !isActive('student-reviews'), 'border-cta': isActive('student-reviews') }"
+      x-cloak
+    >
+      Student reviews
+    </a>
+    <a
+      href="#tuition-fees"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Tuition fees"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Tuition fees"
+      x-bind:class="{ 'border-transparent': !isActive('tuition-fees'), 'border-cta': isActive('tuition-fees') }"
+      x-cloak
+    >
+      Tuition fees
+    </a>
+    <a
+      href="#recognition"
+      class="inline-flex items-center px-2 md:px-4 pt-1 border-b-4 font-medium leading-5 hover:border-cta focus:outline-none transition duration-150 ease-in-out flex-shrink-0"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Recognition"
+      data-t4-eventname="menu"
+      data-t4-type="navi"
+      data-t4-label="Recognition"
+      x-bind:class="{ 'border-transparent': !isActive('recognition'), 'border-cta': isActive('recognition') }"
+      x-cloak
+    >
+      Recognition
+    </a>
+  </div>
+</nav>

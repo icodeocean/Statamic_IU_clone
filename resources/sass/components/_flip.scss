@@ -1,0 +1,35 @@
+@mixin flipped-state {
+  .flip-front {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+
+  .flip-back {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+
+.flip {
+  &.flipped {
+    @include flipped-state;
+  }
+}
+
+@screen lg {
+  .flip:hover {
+    @include flipped-state;
+  }
+}
+
+.flip-front,
+.flip-back {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.flip-front {
+  transform: rotateX(0) rotateY(0);
+}
+
+.flip-back {
+  transform: rotateX(0) rotateY(-180deg);
+}

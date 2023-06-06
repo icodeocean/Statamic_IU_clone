@@ -1,13 +1,31 @@
-<!doctype html>
-<html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-    </head>
-    <body class="bg-white font-sans leading-normal text-gray-800">
-        {{ template_content }}
-    </body>
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title ?? site:name }}</title>
+    {{ vite src="resources/js/app.js|resources/sass/app.scss" }}
+  </head>
+  <body
+    class="body relative text-black font-normal text-left overflow-x-hidden overscroll-none"
+    data-environment="production"
+    data-client="Online International"
+    data-client-short="eu"
+    data-color="green"
+    data-country="HK"
+    data-market="mm"
+    data-units='{"online":"eu","campus":"eums"}'
+    data-preview="false"
+    data-hide-geo-overlay="false"
+    data-application="https://www.iu.org/en-in/application/mm/"
+    x-data="body"
+    x-bind:data-business-unit="currentBusinessUnit"
+    x-bind:class="{ 'overflow-hidden': bodyNoScroll }"
+    x-on:resize.window.debounce.passive="updateViewport()"
+    x-on:scroll.window.passive="handleScroll()"
+    data-business-unit="eu"
+  >
+    {{ template_content }}
+  </body>
 </html>

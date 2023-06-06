@@ -1,0 +1,31 @@
+.check-list {
+  ul {
+    @apply my-4 px-0;
+  }
+
+  li {
+    @apply m-0 pl-8 relative list-none;
+  }
+
+  li::before {
+    content: '';
+    background: transparent url('/static/icons/font-awesome/check-light.svg') no-repeat center;
+    background-size: 100%;
+
+    @apply absolute top-1 left-0 h-4 w-4 inline-block mr-4;
+  }
+
+  &.check-list-inline ul {
+    @apply mb-0 mt-2;
+  }
+}
+
+.wysiwyg.check-list {
+  ul {
+    @apply pl-0;
+  }
+}
+
+.link {
+  @apply underline hover:text-gray-700 transition-colors duration-300;
+}

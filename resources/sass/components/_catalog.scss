@@ -1,0 +1,10 @@
+.catalog-filter {
+  @apply cursor-pointer;
+}
+
+.catalog-filter.is-active::before {
+  content: '';
+  border-bottom: 6px solid transparent;
+
+  @apply right-0 left-0 bottom-0 absolute border-cta;
+}

@@ -1,0 +1,12 @@
+.frame {
+  &-label {
+    &::after {
+      content: '';
+      border-color: transparent;
+      border-bottom-color: inherit;
+      border-width: 0 14px 38px 0;
+
+      @apply absolute inline-block h-0 w-0 left-full top-1 -ml-px border-solid;
+    }
+  }
+}

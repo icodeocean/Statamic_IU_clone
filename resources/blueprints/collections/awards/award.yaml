@@ -1,0 +1,54 @@
+title: award
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: text_content
+            field:
+              type: markdown
+              display: 'Text Content'
+              localizable: true
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              smartypants: false
+              restrict: false
+              antlers: false
+              hide_display: false
+          -
+            handle: image_content
+            field:
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              smartypants: false
+              restrict: false
+              antlers: false
+              type: markdown
+              display: 'Image Content'
+              icon: markdown
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true

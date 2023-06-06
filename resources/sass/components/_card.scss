@@ -1,0 +1,20 @@
+.folder-tab {
+  min-height: 40px;
+  min-width: 80px;
+  transform: translateX(-6px);
+}
+
+.folder-tab::after {
+  border-color: transparent;
+  border-bottom-color: inherit;
+  border-style: solid;
+  border-width: 0 14px 33px 0;
+  content: '';
+  left: calc(100% - 2px);
+  padding-left: 1px;
+  @apply w-0 bottom-0 absolute h-0;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}

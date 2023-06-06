@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "support";
+@import "components/header";
+@import "components/nav";
+@import "components/catalog";
+@import "components/success-stories";
+@import "components/study-alliances";
+@import "components/accordion";
+@import "components/contact-bubble";
+@import "components/button";
+@import "components/custom";
+@import "components/frame";
+@import "components/flip";
+@import "components/hamburger";
+@import "components/headline";
+@import "components/hero";
+@import "components/slope";
+@import "components/wysiwyg";
+@import "components/slider";
+@import "components/area";
+@import "components/card";
+
+@import "custom";

@@ -1,0 +1,29 @@
+.hero {
+  &-image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+
+    @screen lg {
+      clip-path: unset;
+    }
+
+    .slope-container {
+      @screen lg {
+        clip-path: polygon(7vw 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+
+  .frame {
+    width: calc(theme('width.screen') - theme('spacing.32'));
+
+    @screen xl {
+      width: calc(theme('screens.xl') - theme('spacing.32'));
+    }
+
+    &-label {
+      @screen lg {
+        @apply -mt-3 -ml-4;
+      }
+    }
+  }
+}

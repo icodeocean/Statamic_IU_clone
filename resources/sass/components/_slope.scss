@@ -1,0 +1,56 @@
+.has-slope-tl,
+.has-slope-tr,
+.has-slope-br,
+.has-slope-bl {
+  @apply mb-0;
+
+  .slope-bl,
+  .slope-br,
+  .slope-tl,
+  .slope-tr {
+    height: 7vw;
+    width: 100vw;
+    z-index: 1;
+    @apply block absolute left-0;
+  }
+}
+
+.has-slope-tl,
+.has-slope-tr {
+  margin-top: 7vw;
+}
+
+.has-slope-bl,
+.has-slope-br {
+  margin-bottom: 7vw;
+}
+
+.slope-tl {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  margin-bottom: -1px;
+  @apply bottom-full;
+}
+
+.slope-tr {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  margin-bottom: -1px;
+  @apply bottom-full;
+}
+
+.slope-br {
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  margin-top: -1px;
+  @apply top-full;
+}
+
+.slope-bl {
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  margin-top: -1px;
+  @apply top-full;
+}
+
+.slope-lt {
+  clip-path: polygon(100% 0, 4% 0, 100% 100%);
+  margin-right: -1px;
+  @apply bottom-full;
+}

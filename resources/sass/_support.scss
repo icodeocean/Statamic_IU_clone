@@ -1,0 +1,9 @@
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  [class*='backdrop-blur'] {
+    --tw-bg-opacity: 0.9;
+  }
+}
+
+[x-cloak] {
+  @apply hidden;
+}

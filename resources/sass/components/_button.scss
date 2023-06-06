@@ -1,0 +1,39 @@
+.button {
+  @apply leading-5 px-4 py-2 lg:px-6 lg:py-3 font-bold uppercase inline-flex items-center justify-center cursor-pointer;
+
+  &--primary {
+    @apply font-bold uppercase rounded-lg border-2 border-cta text-white bg-cta transition duration-150 ease-in-out hover:bg-cta-light hover:border-cta-light active:border-cta-light active:border-cta-dark disabled:bg-gray-300 disabled:border-gray-300 disabled:text-white disabled:cursor-default cursor-pointer;
+  }
+
+  &--secondary {
+    @apply font-bold uppercase rounded-lg border-2 border-cta text-black bg-transparent transition duration-150 ease-in-out hover:border-cta-light focus:shadow-inner active:shadow-inner active:border-cta-dark focus:bg-cta-lightest disabled:bg-gray-300 disabled:border-gray-300 disabled:text-white disabled:cursor-default cursor-pointer;
+  }
+
+  &--custom-color {
+    @apply font-bold uppercase rounded-lg transition duration-150 ease-in-out disabled:bg-gray-300 disabled:border-gray-300 disabled:text-white disabled:cursor-default cursor-pointer;
+  }
+
+  &--link {
+    @apply underline transition-all duration-300 hover:text-gray-700;
+  }
+
+  &--small {
+    @apply px-4 py-2 text-xs lg:text-sm;
+  }
+
+  &--inner-icon-r {
+    @apply border-t-2 border-r-2 border-b-2 border-cta rounded-r-lg focus:outline-none bg-cta focus:bg-cta-light disabled:bg-gray-300 disabled:border-gray-300;
+  }
+
+  &--geo-overlay {
+    @apply pl-8 pr-8 text-sm md:text-base;
+  }
+
+  &--text-only {
+    @apply p-0;
+  }
+}
+
+.dark-section .button {
+  @apply text-white;
+}

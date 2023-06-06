@@ -1,0 +1,2726 @@
+<header
+  class="header-main block sticky top-0 w-full z-50 bg-white shadow transition-transform duration-300 pb-16 xl:pb-0"
+  x-bind:class="{ '-translate-y-20': isHandheldViewport && !scrollsUp && scrollPosition < -145 }"
+>
+  <div
+    class="relative z-10 max-w-screen-xl mx-auto flex justify-between items-center h-20 px-4 sm:px-6 lg:px-8 xl:justify-start"
+  >
+    <a
+      href="https://www.iu.org/en-in/"
+      class="logo flex mr-5"
+      title="IU - International University of Applied Sciences"
+      data-t-c="Main Menu"
+      data-t-a="click"
+      data-t-l="Logo"
+      data-t4-eventname="menu"
+      data-t4-type="main"
+      data-t4-label="logo"
+      x-init="if (document.referrer.includes('/lp/')) { $el.setAttribute('href', document.referrer) }"
+    >
+      <svg
+        width="20"
+        height="20"
+        data-t-c="Main Menu"
+        data-t-a="click"
+        data-t-l="Logo"
+        data-t4-eventname="menu"
+        data-t4-type="main"
+        data-t4-label="logo"
+        class="w-auto block"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 425.93 141.73"
+      >
+        <path
+          d="M310.1,64.67h-2.68v-21h2.68ZM176,118.38l7.11,21h-2.83l-2-6.41h-7.66l-2,6.41h-2.73l7.12-21Zm.61,9.28c-.76-2.35-1.43-4.66-2.11-7.09h-.12c-.66,2.44-1.33,4.74-2.09,7.09l-1,3.21h6.33Zm4.5-34.23c0,5-2.2,6.64-5,6.64s-4.88-1.59-4.88-6.64V81h-2.68V93.36c0,6.75,3.27,9.07,7.56,9.07s7.55-2.32,7.55-9.07V81h-2.56ZM294.15,64.67h2.68V45.91h6.36V43.64h-15.4v2.27h6.36ZM305.86,102V83.27h6.37V81H296.82v2.26h6.37V102ZM228.81,62.41H219V54.76h8V52.5h-8V45.91h9.45V43.64H216.37v21h12.44Zm111.81-8.74c0-2.2-.21-4.45-.34-6.57h.13l2.27,4.34,7.61,13.23h2.76v-21h-2.54V54.53c0,2.2.2,4.57.34,6.69h-.13l-2.27-4.36-7.61-13.22h-2.77v21h2.55Zm-140.33,70.9c0,4.43-3.16,6.5-7.77,6.5h-3.45v8.34h-2.68v-21h6C197.11,118.38,200.29,120,200.29,124.57Zm-2.67,0c0-3-1.87-4-5.56-4h-3v8.34h3.11C195.86,128.89,197.62,127.56,197.62,124.57Zm4.56-32.68c0,2.2.21,4.57.35,6.7h-.13l-2.27-4.36L192.51,81h-2.76v21h2.54V91c0-2.2-.2-4.44-.34-6.57h.13l2.27,4.35L202,102h2.77V81h-2.55ZM388.91,62.41h-9.18V43.64h-2.68v21h11.86ZM225.37,99.33h-.13c-.78-2.47-1.29-4.48-2-7L219.82,81H217l6.72,21h3.1l6.68-21h-2.73l-3.37,11.37C226.67,94.85,226.15,96.86,225.37,99.33ZM255,53.67c0-2.2-.2-4.45-.34-6.57h.13L257,51.44l7.61,13.23h2.77v-21h-2.54V54.53c0,2.2.2,4.57.34,6.69h-.13l-2.27-4.36L255.2,43.64h-2.77v21H255ZM211,102h2.68V81H211ZM203.1,64.67h2.67V45.91h6.37V43.64H196.73v2.27h6.37Zm-23-11c0-2.2-.21-4.45-.34-6.57h.13l2.27,4.34,7.61,13.23h2.76v-21H190V54.53c0,2.2.2,4.57.34,6.69h-.13l-2.27-4.36-7.61-13.22h-2.77v21h2.55ZM16.42,0C6.9,0,0,6.13,0,14.83S6.9,29.66,16.42,29.66s16.42-6.2,16.42-14.83S25.94,0,16.42,0ZM218.9,124.57c0,4.43-3.17,6.5-7.77,6.5h-3.46v8.34H205v-21h6C215.72,118.38,218.9,120,218.9,124.57Zm-2.67,0c0-3-1.87-4-5.57-4h-3v8.34h3.12C214.47,128.89,216.23,127.56,216.23,124.57ZM2.2,139.42H30.57V43.66H2.2ZM171.29,43.64h-2.68v21h2.68ZM111.84,107c-5.54,7.54-9.9,10.53-17,10.53-8.19,0-11.9-4.31-11.9-18.09V43.66H54.56v59.45c0,23.93,8.87,38.62,29.7,38.62,13,0,22.06-6.06,30.06-15.6h.7l2,13.29h23.15V43.66H111.84ZM355,91.45c0,6.73-3.71,11-9,11s-9-4.25-9-11,3.7-10.83,9-10.83S355,84.73,355,91.45Zm-2.77,0c0-5.24-2.47-8.47-6.22-8.47s-6.23,3.23-6.23,8.47,2.47,8.62,6.23,8.62S352.26,96.69,352.26,91.45ZM340.91,129.5h8v-2.27h-8v-6.59h9.45v-2.26H338.24v21h12.44v-2.27h-9.77Zm27.12-.24c0,2.2.21,4.57.34,6.69h-.13L366,131.6l-7.61-13.22H355.6v21h2.54v-11c0-2.2-.21-4.44-.34-6.57h.13l2.27,4.35,7.61,13.23h2.76v-21H368ZM226.28,118.38H223.6v21h11.86v-2.27h-9.18Zm103,21H332v-21h-2.68Zm37.29-95.77,7.12,21H370.9l-2-6.4h-7.66l-2,6.4h-2.72l7.11-21Zm.62,9.29c-.76-2.35-1.43-4.66-2.11-7.09H365c-.65,2.44-1.32,4.74-2.08,7.09l-1,3.2h6.33ZM360,102h2.67V92.63h8V90.37h-8v-7.1h9.46V81H360Zm61.57,26.15-3-1.29c-1.65-.7-3.49-1.46-3.49-3.48s1.57-3.07,3.93-3.07a6.71,6.71,0,0,1,4.77,2l1.42-1.72A8.67,8.67,0,0,0,419,118c-3.82,0-6.63,2.37-6.63,5.58s2.3,4.58,4.26,5.42l3,1.33c2,.87,3.51,1.55,3.51,3.7s-1.63,3.42-4.39,3.42a8.24,8.24,0,0,1-5.81-2.61l-1.6,1.84a10.09,10.09,0,0,0,7.36,3.12c4.42,0,7.17-2.65,7.17-6C425.93,130.69,424,129.24,421.59,128.19Zm-23.34,1.31h8v-2.27h-8v-6.59h9.44v-2.26H395.57v21H408v-2.27h-9.76ZM322.93,87c-.64,1.55-1.37,3-2.1,4.58h-.13c-.72-1.57-1.36-3-2-4.58L316,81H313.1l6.32,12.88V102h2.68V93.89L328.42,81h-2.78Zm61.92,50.49c-4,0-6.51-3.31-6.51-8.6s2.64-8.49,6.62-8.49a5.73,5.73,0,0,1,4.27,2l1.47-1.74a7.85,7.85,0,0,0-5.79-2.6c-5.34,0-9.33,4.14-9.33,10.92s3.92,10.88,9.16,10.88a8.1,8.1,0,0,0,6.45-3l-1.46-1.68A6.3,6.3,0,0,1,384.85,137.44ZM333.09,54.08c0,6.74-3.71,11-9,11s-9-4.24-9-11,3.71-10.82,9-10.82S333.09,47.36,333.09,54.08Zm-2.77,0c0-5.24-2.47-8.47-6.22-8.47s-6.23,3.23-6.23,8.47,2.47,8.63,6.23,8.63S330.32,59.32,330.32,54.08Zm-90.67,85.33h2.68v-21h-2.68Zm79-2c-4,0-6.51-3.31-6.51-8.6s2.64-8.49,6.61-8.49a5.7,5.7,0,0,1,4.27,2l1.47-1.74a7.81,7.81,0,0,0-5.78-2.6c-5.34,0-9.34,4.14-9.34,10.92s3.93,10.88,9.17,10.88a8.1,8.1,0,0,0,6.45-3l-1.47-1.68A6.28,6.28,0,0,1,318.62,137.44Zm-67.39-7.94h8v-2.27h-8v-6.59h9.45v-2.26H248.56v21H261v-2.27h-9.77Zm-2.08-29.72h-9.77V92.13h8V89.86h-8V83.27h9.45V81H236.71v21h12.44Zm-9-44h-3.8v8.89h-2.67v-21h6.58c4.29,0,7.36,1.54,7.36,5.92a5.69,5.69,0,0,1-4.74,5.91l5.37,9.2h-3Zm-.27-2.17c3.27,0,5.07-1.32,5.07-4s-1.8-3.75-5.07-3.75H236.4v7.8ZM268.64,102h-3l-5.07-8.89h-3.8V102h-2.67V81h6.58c4.29,0,7.36,1.54,7.36,5.92a5.7,5.7,0,0,1-4.74,5.91Zm-3.3-15.11c0-2.77-1.8-3.75-5.07-3.75h-3.53V91h3.53C263.54,91,265.34,89.65,265.34,86.93ZM292.58,81h-2.67v21h2.67Zm9.07,47.18-3-1.29c-1.65-.7-3.48-1.46-3.48-3.48s1.56-3.07,3.92-3.07a6.71,6.71,0,0,1,4.77,2l1.42-1.72a8.67,8.67,0,0,0-6.19-2.61c-3.82,0-6.62,2.37-6.62,5.58s2.3,4.58,4.26,5.42l3,1.33c2,.87,3.51,1.55,3.51,3.7s-1.64,3.42-4.4,3.42a8.2,8.2,0,0,1-5.8-2.61l-1.61,1.84a10.09,10.09,0,0,0,7.36,3.12c4.42,0,7.17-2.65,7.17-6C306,130.69,304.08,129.24,301.65,128.19ZM281,90.83l-3-1.3c-1.65-.7-3.48-1.46-3.48-3.48S276.07,83,278.43,83a6.71,6.71,0,0,1,4.77,2l1.42-1.72a8.67,8.67,0,0,0-6.19-2.61c-3.82,0-6.62,2.37-6.62,5.59s2.3,4.58,4.26,5.41l3,1.33c2,.87,3.51,1.56,3.51,3.7s-1.64,3.42-4.4,3.42a8.19,8.19,0,0,1-5.8-2.6l-1.6,1.83a10.05,10.05,0,0,0,7.35,3.13c4.43,0,7.17-2.66,7.17-6C285.32,93.32,283.42,91.87,281,90.83Zm0-47.19,7.11,21h-2.83l-2-6.4h-7.67l-2,6.4h-2.73l7.12-21Zm.61,9.29c-.76-2.35-1.43-4.66-2.11-7.09h-.12c-.65,2.44-1.33,4.74-2.08,7.09l-1,3.2h6.33Zm-.48,75.89c0,6.68-3.47,10.59-9.81,10.59h-5.38v-21h5.26C277.64,118.38,281.11,122.14,281.11,128.82Zm-2.76,0c0-5.32-2.46-8.25-7.37-8.25h-2.39v16.64H271C275.89,137.21,278.35,134.13,278.35,128.82Z"
+        />
+      </svg>
+    </a>
+    <div
+      class="iu-nav block absolute xl:relative h-screen xl:h-auto left-0 right-0 top-20 xl:top-0 max-xl:pointer-events-none max-xl:overflow-hidden"
+      x-data="headerNavigation"
+      x-trap="navOpen && isHandheldViewport"
+    >
+      <div
+        class="iu-nav-wrap z-10 bg-white block absolute top-0 bottom-0 border-t border-gray-50 w-full overflow-x-hidden overflow-y-auto xl:static xl:bottom-auto xl:flex xl:justify-end xl:border-0 xl:overflow-visible max-xl:pointer-events-auto"
+        x-show="(navOpen && isHandheldViewport) || ! isHandheldViewport"
+        x-transition:enter="transition ease-in-out duration-300"
+        x-transition:enter-start="max-xl:translate-x-full"
+        x-transition:enter-end="max-xl:translate-x-0"
+        x-transition:leave="transition ease-in-out duration-300"
+        x-transition:leave-start="max-xl:translate-x-0"
+        x-transition:leave-end="max-xl:translate-x-full"
+      >
+        <nav class="block pt-2 xl:pt-0" data-level="0">
+          <ul class="block xl:h-20 xl:flex-1 xl:flex xl:items-stretch">
+            <li
+              class="xl:flex xl:items-stretch group"
+              x-data
+              x-id="['level-one']"
+              x-bind:class="{ 'max-xl:hidden': hasActiveChild($id('level-one')) }"
+            >
+              <a
+                class="flex justify-between items-center focus:outline-none w-full py-3 px-8 xl:py-0 xl:px-4 uppercase font-bold"
+                href="/en-in/bachelor/"
+                data-type="menu-link"
+                data-object="menu-item"
+                data-t-c="Main Menu"
+                data-t-a="click"
+                data-t-l="Bachelor"
+                data-t4-eventname="menu"
+                data-t4-type="main"
+                data-t4-label="Bachelor"
+                data-level="1"
+                x-on:click="toggleLevelOne($event, $id('level-one'))"
+                x-bind:class="{ 'max-xl:font-semibold': isActiveChild($id('level-one')) }"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                  />
+                </svg>
+                <span
+                  class="xl:after:content-[''] xl:after:block xl:after:border-b-3 xl:after:border-cta xl:after:scale-x-0 xl:after:transition-transform xl:after:duration-300 xl:after:ease-in-out xl:group-hover:after:scale-x-100"
+                  >Bachelor</span
+                >
+                <svg
+                  width="20"
+                  height="20"
+                  class="h-4 w-4 fill-current pl-2 hidden xl:inline-block"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                  />
+                </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:invisible': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta xl:hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                  />
+                </svg>
+              </a>
+              <div
+                class="hidden relative xl:group-hover:block xl:fixed bg-white left-1/2 -translate-x-1/2 xl:w-full xl:max-w-screen-xl xl:mx-auto xl:transition-opacity xl:top-20 xl:p-8 xl:shadow xl:rounded-b-xl"
+                x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+              >
+                <ul class="xl:grid xl:grid-cols-4 xl:gap-x-5 xl:gap-y-7">
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/bachelor/data-it/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-BA-IT &amp; Technology"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Data &amp; IT"
+                      data-t4-label="Data &amp; IT"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Data &amp; IT
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/applied-artificial-intelligence/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Applied Artificial Intelligence"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Applied Artificial Intelligence"
+                        >
+                          Applied Artificial Intelligence
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/business-it/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BSc-Business &amp; IT"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Business &amp; IT"
+                        >
+                          Business &amp; IT
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/computer-science/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Computer Science"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Computer Science"
+                        >
+                          Computer Science
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/cyber-security/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Cyber Security"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Cyber Security"
+                        >
+                          Cyber Security
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/data-science/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Data Science"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Data Science"
+                        >
+                          Data Science
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/engineering/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Engineering"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Engineering"
+                          x-show="online"
+                        >
+                          Engineering
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/industrial-engineering-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Industrial Engineering"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Industrial Engineering &amp; Management"
+                        >
+                          Industrial Engineering &amp; Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/robotics/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Robotics"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Robotics"
+                        >
+                          Robotics
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/software-development/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Software Development"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Software Development"
+                          x-show="online"
+                        >
+                          Software Development
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/bachelor/business-management/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-BA-Economy &amp; Management"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Business &amp; Management"
+                      data-t4-label="Business &amp; Management"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Business &amp; Management
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/aviation-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Aviation management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Aviation Management"
+                          x-show="online"
+                        >
+                          Aviation Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/business-administration/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Business Administration"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Business Administration"
+                        >
+                          Business Administration
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/digital-business/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Digital Business"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Digital Business"
+                          x-show="online"
+                        >
+                          Digital Business
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/entrepreneurship/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Entrepreneurship"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Entrepreneurship"
+                        >
+                          Entrepreneurship
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/hospitality-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-Hospitality Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Hospitality Management"
+                          x-show="online"
+                        >
+                          Hospitality Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/international-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-International Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="International Management"
+                        >
+                          International Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-B.A. Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Management"
+                          x-show="online"
+                        >
+                          Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li x-show="online">
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/bachelor/health-social-care/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-BA-Health &amp; Social Care"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Health &amp; Social Care"
+                      data-t4-label="Health &amp; Social Care"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Health &amp; Social Care
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/international-healthcare-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BA-International Healthcare Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Health &amp; Social Care"
+                          data-t4-label="International Healthcare Management"
+                          x-show="online"
+                        >
+                          International Healthcare Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li x-show="online">
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/bachelor/psychology/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-BA-Psychology"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Psychology"
+                      data-t4-label="Psychology"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Psychology
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/applied-psychology/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Applied Psychology"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Psychology"
+                          data-t4-label="Applied Psychology"
+                          x-show="online"
+                        >
+                          Applied Psychology
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/bachelor/industrial-and-organizational-psychology/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-BSc-Industrial and Organizational Psychology"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Psychology"
+                          data-t4-label="Industrial and Organizational Psychology"
+                          x-show="online"
+                        >
+                          Industrial and Organizational Psychology
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="xl:flex xl:items-stretch group"
+              x-data
+              x-id="['level-one']"
+              x-bind:class="{ 'max-xl:hidden': hasActiveChild($id('level-one')) }"
+            >
+              <a
+                class="flex justify-between items-center focus:outline-none w-full py-3 px-8 xl:py-0 xl:px-4 uppercase font-bold"
+                href="/en-in/master/"
+                data-type="menu-link"
+                data-object="menu-item"
+                data-t-c="Main Menu"
+                data-t-a="click"
+                data-t-l="Master"
+                data-t4-eventname="menu"
+                data-t4-type="main"
+                data-t4-label="Master"
+                data-level="1"
+                x-on:click="toggleLevelOne($event, $id('level-one'))"
+                x-bind:class="{ 'max-xl:font-semibold': isActiveChild($id('level-one')) }"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                  />
+                </svg>
+                <span
+                  class="xl:after:content-[''] xl:after:block xl:after:border-b-3 xl:after:border-cta xl:after:scale-x-0 xl:after:transition-transform xl:after:duration-300 xl:after:ease-in-out xl:group-hover:after:scale-x-100 xl:after:scale-x-100"
+                  >Master</span
+                >
+                <svg
+                  width="20"
+                  height="20"
+                  class="h-4 w-4 fill-current pl-2 hidden xl:inline-block"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                  />
+                </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:invisible': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta xl:hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                  />
+                </svg>
+              </a>
+              <div
+                class="hidden relative xl:group-hover:block xl:fixed bg-white left-1/2 -translate-x-1/2 xl:w-full xl:max-w-screen-xl xl:mx-auto xl:transition-opacity xl:top-20 xl:p-8 xl:shadow xl:rounded-b-xl"
+                x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+              >
+                <ul class="xl:grid xl:grid-cols-4 xl:gap-x-5 xl:gap-y-7">
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/master/data-it/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MA-IT &amp; Technology"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Data &amp; IT"
+                      data-t4-label="Data &amp; IT"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Data &amp; IT
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/artificial-intelligence/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Artificial Intelligence"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Artificial Intelligence"
+                        >
+                          Artificial Intelligence
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/business-and-it/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Business &amp; IT"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Business &amp; IT"
+                          x-show="online"
+                        >
+                          Business &amp; IT
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/computer-science/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Computer Science"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Computer Science"
+                        >
+                          Computer Science
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/cyber-security/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Cyber Security"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Cyber Security"
+                        >
+                          Cyber Security
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/data-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Data Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Data Management"
+                          x-show="online"
+                        >
+                          Data Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/data-science/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Data Science"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Data Science"
+                        >
+                          Data Science
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/devops-and-cloud-computing/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master DevOps and Cloud Computing"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="DevOps and Cloud Computing"
+                          x-show="online"
+                        >
+                          DevOps and Cloud Computing
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/devops-cloud-computing-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master DevOps and Cloud Computing Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="DevOps and Cloud Computing Management"
+                          x-show="online"
+                        >
+                          DevOps and Cloud Computing Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/engineering-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Engineering Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Engineering Management"
+                        >
+                          Engineering Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/information-technology-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Information Technology Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Data &amp; IT"
+                          data-t4-label="Information Technology Management"
+                          x-show="online"
+                        >
+                          Information Technology Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/master/business-management/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MA-Economy &amp; Management"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Business &amp; Management"
+                      data-t4-label="Business &amp; Management"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Business &amp; Management
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/business-intelligence/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Business Intelligence"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Business Intelligence"
+                          x-show="online"
+                        >
+                          Business Intelligence
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/digital-innovation-intrapreneurship/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Digital Innovation and Intrapreneurship"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Digital Innovation &amp; Intrapreneurship"
+                          x-show="online"
+                        >
+                          Digital Innovation &amp; Intrapreneurship
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/digital-product-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Digital Product Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Digital Product Management"
+                          x-show="online"
+                        >
+                          Digital Product Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/finance-accounting-taxation/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Finance, Accounting and Taxation"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Finance, Accounting &amp; Taxation"
+                          x-show="online"
+                        >
+                          Finance, Accounting &amp; Taxation
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/human-resource-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Human Resource Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Human Resource Management"
+                          x-show="online"
+                        >
+                          Human Resource Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/innovation-entrepreneurship/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Innovation and Entrepreneurship"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Innovation &amp; Entrepreneurship"
+                          x-show="online"
+                        >
+                          Innovation &amp; Entrepreneurship
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/international-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master International Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="International Management"
+                        >
+                          International Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Management + Majors"
+                        >
+                          Management + Majors
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/product-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master Product Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Product Management"
+                          x-show="online"
+                        >
+                          Product Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/project-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Project Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Business &amp; Management"
+                          data-t4-label="Project Management"
+                          x-show="online"
+                        >
+                          Project Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/master/marketing-communication/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MA-Marketing &amp; Communication"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Marketing &amp; Communication"
+                      data-t4-label="Marketing &amp; Communication"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Marketing &amp; Communication
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/digital-marketing/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Digital Marketing"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Marketing &amp; Communication"
+                          data-t4-label="Digital Marketing"
+                          x-show="online"
+                        >
+                          Digital Marketing
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/growth-hacking/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Growth Hacking"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Marketing &amp; Communication"
+                          data-t4-label="Growth Hacking"
+                          x-show="online"
+                        >
+                          Growth Hacking
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/growth-hacking-for-entrepreneurs/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Growth Hacking for Entrepreneurs"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Marketing &amp; Communication"
+                          data-t4-label="Growth Hacking for Entrepreneurs"
+                          x-show="online"
+                        >
+                          Growth Hacking for Entrepreneurs
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/marketing-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="Marketing Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Marketing &amp; Communication"
+                          data-t4-label="Marketing Management"
+                        >
+                          Marketing Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li x-show="online">
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/master/health-social-care/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MA-Health &amp; Social Care"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Health &amp; Social Care"
+                      data-t4-label="Health &amp; Social Care"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Health &amp; Social Care
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/international-healthcare-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-International Healthcare Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Health &amp; Social Care"
+                          data-t4-label="International Healthcare Management"
+                          x-show="online"
+                        >
+                          International Healthcare Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li x-show="online">
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/master/psychology/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MA-Psychology"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Psychology"
+                      data-t4-label="Psychology"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Psychology
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/master/industrial-and-organizational-psychology/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Industrial and Organizational Psychology"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Psychology"
+                          data-t4-label="Industrial and Organizational Psychology"
+                          x-show="online"
+                        >
+                          Industrial and Organizational Psychology
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="xl:flex xl:items-stretch group"
+              x-data
+              x-id="['level-one']"
+              x-bind:class="{ 'max-xl:hidden': hasActiveChild($id('level-one')) }"
+            >
+              <a
+                class="flex justify-between items-center focus:outline-none w-full py-3 px-8 xl:py-0 xl:px-4 uppercase font-bold"
+                href="/en-in/mba/"
+                data-type="menu-link"
+                data-object="menu-item"
+                data-t-c="Main Menu"
+                data-t-a="click"
+                data-t-l="MBA"
+                data-t4-eventname="menu"
+                data-t4-type="main"
+                data-t4-label="MBA"
+                data-level="1"
+                x-on:click="toggleLevelOne($event, $id('level-one'))"
+                x-bind:class="{ 'max-xl:font-semibold': isActiveChild($id('level-one')) }"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                  />
+                </svg>
+                <span
+                  class="xl:after:content-[''] xl:after:block xl:after:border-b-3 xl:after:border-cta xl:after:scale-x-0 xl:after:transition-transform xl:after:duration-300 xl:after:ease-in-out xl:group-hover:after:scale-x-100"
+                  >MBA</span
+                >
+                <svg
+                  width="20"
+                  height="20"
+                  class="h-4 w-4 fill-current pl-2 hidden xl:inline-block"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                  />
+                </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:invisible': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta xl:hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                  />
+                </svg>
+              </a>
+              <div
+                class="hidden relative xl:group-hover:block xl:fixed bg-white left-1/2 -translate-x-1/2 xl:w-full xl:max-w-screen-xl xl:mx-auto xl:transition-opacity xl:top-20 xl:p-8 xl:shadow xl:rounded-b-xl"
+                x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+              >
+                <ul class="xl:grid xl:grid-cols-4 xl:gap-x-5 xl:gap-y-7">
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/mba/general-mbas/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MBA-General MBAs"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="General MBAs"
+                      data-t4-label="General MBAs"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      General MBAs
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/master-of-business-administration/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-Master of Business Administration"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="General MBAs"
+                          data-t4-label="Master of Business Administration"
+                        >
+                          Master of Business Administration
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/one-year-mba/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-One-Year MBA"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="General MBAs"
+                          data-t4-label="One-year MBA"
+                        >
+                          One-year MBA
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/mba/specialised-mbas/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-MBA-Specialisations"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Specialised MBAs"
+                      data-t4-label="Specialised MBAs"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Specialised MBAs
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/artificial-intelligence/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA Artificial Intelligence"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Artificial Intelligence"
+                        >
+                          MBA – Artificial Intelligence
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/big-data-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MBA – Big Data Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Big Data Management"
+                        >
+                          MBA – Big Data Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/e-sports-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA E-Sports Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – E-Sports Management"
+                        >
+                          MBA – E-Sports Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/engineering-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MBA – Engineering Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Engineering Management"
+                        >
+                          MBA – Engineering Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/finance-accounting/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MBA – Finance and Accounting"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Finance &amp; Accounting"
+                        >
+                          MBA – Finance &amp; Accounting
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/healthcare-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA Healthcare Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Healthcare Management"
+                        >
+                          MBA – Healthcare Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/human-resource-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA Human Resource Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Human Resource Management"
+                        >
+                          MBA – Human Resource Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/it-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MBA IT Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – IT Management"
+                        >
+                          MBA – IT Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/innovation-entrepreneurship/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA Innovation &amp; Entrepreneurship"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Innovation &amp; Entrepreneurship"
+                        >
+                          MBA – Innovation &amp; Entrepreneurship
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/international-marketing/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MBA – International Marketing"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – International Marketing"
+                        >
+                          MBA – International Marketing
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/salesforce-sales-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA – Salesforce and Sales Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Salesforce &amp; Sales Management"
+                        >
+                          MBA – Salesforce &amp; Sales Management
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/mba/supply-chain-management/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-MA-MBA Supply Chain Management"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Specialised MBAs"
+                          data-t4-label="MBA – Supply Chain Management"
+                        >
+                          MBA – Supply Chain Management
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="xl:flex xl:items-stretch group"
+              x-data
+              x-id="['level-one']"
+              x-bind:class="{ 'max-xl:hidden': hasActiveChild($id('level-one')) }"
+            >
+              <a
+                class="flex justify-between items-center focus:outline-none w-full py-3 px-8 xl:py-0 xl:px-4 uppercase font-bold"
+                href="#"
+                data-type="menu-link"
+                data-object="menu-item"
+                data-t-c="Main Menu"
+                data-t-a="click"
+                data-t-l="About"
+                data-t4-eventname="menu"
+                data-t4-type="main"
+                data-t4-label="About"
+                data-level="1"
+                x-on:click="toggleLevelOne($event, $id('level-one'))"
+                x-bind:class="{ 'max-xl:font-semibold': isActiveChild($id('level-one')) }"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                  />
+                </svg>
+                <span
+                  class="xl:after:content-[''] xl:after:block xl:after:border-b-3 xl:after:border-cta xl:after:scale-x-0 xl:after:transition-transform xl:after:duration-300 xl:after:ease-in-out xl:group-hover:after:scale-x-100"
+                  >About</span
+                >
+                <svg
+                  width="20"
+                  height="20"
+                  class="h-4 w-4 fill-current pl-2 hidden xl:inline-block"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                  />
+                </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:invisible': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta xl:hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                  />
+                </svg>
+              </a>
+              <div
+                class="hidden relative xl:group-hover:block xl:fixed bg-white left-1/2 -translate-x-1/2 xl:w-full xl:max-w-screen-xl xl:mx-auto xl:transition-opacity xl:top-20 xl:p-8 xl:shadow xl:rounded-b-xl"
+                x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+              >
+                <ul class="xl:grid xl:grid-cols-4 xl:gap-x-5 xl:gap-y-7">
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/about/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-Why Study with us"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Why Study with us"
+                      data-t4-label="Why Study with us"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Why Study with us
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/story-of-iu/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-About Us"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Why Study with us"
+                          data-t4-label="About Us"
+                        >
+                          About Us
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/quality/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Accreditations &amp; Rankings"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Why Study with us"
+                          data-t4-label="Accreditations &amp; Rankings"
+                        >
+                          Accreditations &amp; Rankings
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/dual-degree/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-UK Dual Degree"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Why Study with us"
+                          data-t4-label="UK Dual Degree"
+                        >
+                          UK Dual Degree
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/start-studying/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-Become a Student"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Become a Student"
+                      data-t4-label="Become a Student"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Become a Student
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/start-studying/tuition-fees/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Tuition Fees"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Become a Student"
+                          data-t4-label="Tuition Fees"
+                        >
+                          Tuition Fees
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/knowledge-base/faq/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-FAQ"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Become a Student"
+                          data-t4-label="FAQ"
+                          x-show="online"
+                        >
+                          FAQ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/knowledge-base/webinars/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Upcoming Live Events"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Become a Student"
+                          data-t4-label="Upcoming Live Events"
+                        >
+                          Upcoming Live Events
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/start-studying/high-school-diploma/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-High School Diploma"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Become a Student"
+                          data-t4-label="High School Diploma"
+                          x-show="online"
+                        >
+                          High School Diploma
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/start-studying/masters-mba-for-professionals/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Master for Professionals"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Become a Student"
+                          data-t4-label="Master for Professionals"
+                          x-show="online"
+                        >
+                          Master for Professionals
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/my-university/forms-documents/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Forms &amp; Documents"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Become a Student"
+                          data-t4-label="Forms &amp; Documents"
+                        >
+                          Forms &amp; Documents
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li x-show="online">
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/how-online-studies-work/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-Your Online Studies at IU"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Your Online Studies at IU"
+                      data-t4-label="Your Online Studies at IU"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Your Online Studies at IU
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/how-online-studies-work/mycampus/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-myCampus"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Your Online Studies at IU"
+                          data-t4-label="myCampus"
+                        >
+                          myCampus
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/how-online-studies-work/learn-app/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-IU Learn App"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Your Online Studies at IU"
+                          data-t4-label="IU Learn App"
+                        >
+                          IU Learn App
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/how-online-studies-work/syntea/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Syntea"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Your Online Studies at IU"
+                          data-t4-label="Syntea"
+                        >
+                          Syntea
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/how-online-studies-work/online-exams/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Online Exams"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Your Online Studies at IU"
+                          data-t4-label="Online Exams"
+                        >
+                          Online Exams
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/about/studies-community/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-The IU Community"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="The IU Community"
+                      data-t4-label="The IU Community"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      The IU Community
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/professors-lecturers/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Professors &amp; Lecturers"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="The IU Community"
+                          data-t4-label="Professors &amp; Lecturers"
+                        >
+                          Professors &amp; Lecturers
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/students/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Student Testimonials"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="The IU Community"
+                          data-t4-label="Student Testimonials"
+                        >
+                          Student Testimonials
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/alumni/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Alumni"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="The IU Community"
+                          data-t4-label="Alumni"
+                        >
+                          Alumni
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/about/chat-with-our-students/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Chat With Our Students"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="The IU Community"
+                          data-t4-label="Chat With Our Students"
+                        >
+                          Chat With Our Students
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/my-university/bring-a-friend/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Bring a friend"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="The IU Community"
+                          data-t4-label="Bring a friend"
+                        >
+                          Bring a friend
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/research-at-iu/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Research at IU"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="The IU Community"
+                          data-t4-label="Research at IU"
+                        >
+                          Research at IU
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/career/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-Career"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Career"
+                      data-t4-label="Career"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Career
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/career/job-portal/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Student Job Portal"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Career"
+                          data-t4-label="Student Job Portal"
+                        >
+                          Student Job Portal
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/career/offices/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Career Offices"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Career"
+                          data-t4-label="Career Offices"
+                        >
+                          Career Offices
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/knowledge-base/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Knowledge base"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Career"
+                          data-t4-label="Knowledge base"
+                        >
+                          Knowledge base
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/knowledge-base/how-to-become-a-data-scientist/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-How to Become a Data Scientist"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Career"
+                          data-t4-label="How to Become a Data Scientist"
+                        >
+                          How to Become a Data Scientist
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/knowledge-base/career-in-ai/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-How to Become an AI Specialist"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Career"
+                          data-t4-label="How to Become an AI Specialist"
+                        >
+                          How to Become an AI Specialist
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/knowledge-base/how-to-become-a-computer-scientist/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-How to Become a Computer Scientist"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Career"
+                          data-t4-label="How to Become a Computer Scientist"
+                        >
+                          How to Become a Computer Scientist
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="flex xl:items-center mx-8 my-4 xl:mx-4 xl:my-0"
+              x-bind:class="{ 'max-xl:hidden': activeLevelOne !== null }"
+            >
+              <div
+                class="border-t xl:border-r border-black w-full xl:h-5"
+              ></div>
+            </li>
+            <li
+              class="xl:flex xl:items-stretch group"
+              x-data
+              x-id="['level-one']"
+              x-bind:class="{ 'max-xl:hidden': hasActiveChild($id('level-one')) }"
+            >
+              <a
+                class="flex justify-between items-center focus:outline-none w-full py-3 px-8 xl:py-0 xl:px-4 uppercase font-bold"
+                href="/en-in/my-university/on-campus/"
+                data-type="menu-link"
+                data-object="menu-item"
+                data-t-c="Main Menu"
+                data-t-a="click"
+                data-t-l="On Campus"
+                data-t4-eventname="menu"
+                data-t4-type="main"
+                data-t4-label="On Campus"
+                data-level="1"
+                x-on:click="toggleLevelOne($event, $id('level-one'))"
+                x-bind:class="{ 'max-xl:font-semibold': isActiveChild($id('level-one')) }"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                  />
+                </svg>
+                <span
+                  class="xl:after:content-[''] xl:after:block xl:after:border-b-3 xl:after:border-cta xl:after:scale-x-0 xl:after:transition-transform xl:after:duration-300 xl:after:ease-in-out xl:group-hover:after:scale-x-100"
+                  >On Campus</span
+                >
+                <svg
+                  width="20"
+                  height="20"
+                  class="h-4 w-4 fill-current pl-2 hidden xl:inline-block"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"
+                  />
+                </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  x-bind:class="{ 'max-xl:invisible': isActiveChild($id('level-one')) }"
+                  class="h-4 w-4 fill-current hover:text-cta xl:hidden"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                  />
+                </svg>
+              </a>
+              <div
+                class="hidden relative xl:group-hover:block xl:fixed bg-white left-1/2 -translate-x-1/2 xl:w-full xl:max-w-screen-xl xl:mx-auto xl:transition-opacity xl:top-20 xl:p-8 xl:shadow xl:rounded-b-xl"
+                x-bind:class="{ 'max-xl:block': isActiveChild($id('level-one')) }"
+              >
+                <ul class="xl:grid xl:grid-cols-4 xl:gap-x-5 xl:gap-y-7">
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/my-university/on-campus/overview-on-campus-programmes/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-On Campus Programmes"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="On Campus Programmes"
+                      data-t4-label="On Campus Programmes"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      On Campus Programmes
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/my-university/on-campus/orientation-process/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Orientation Week"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="On Campus Programmes"
+                          data-t4-label="Orientation Week"
+                        >
+                          Orientation Week
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/my-university/on-campus/preparation-programmes/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-IU Pathway Programme"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="On Campus Programmes"
+                          data-t4-label="IU Pathway Programme"
+                        >
+                          IU Pathway Programme
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/my-university/campus-locations/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-Campus Locations"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Campus Locations"
+                      data-t4-label="Campus Locations"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"
+                        />
+                      </svg>
+                      Campus Locations
+
+                      <svg
+                        width="20"
+                        height="20"
+                        class="h-4 w-4 fill-current hidden"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                        />
+                      </svg>
+                    </a>
+                    <ul class="xl:mt-2 xl:space-y-2">
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/my-university/on-campus/berlin-campus/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Campus Berlin"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Campus Locations"
+                          data-t4-label="Campus Berlin"
+                        >
+                          Campus Berlin
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="flex relative items-center lg:hover:text-gray-700 focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto border-b border-gray-50 xl:border-0 px-8 xl:p-0 py-2"
+                          href="/en-in/my-university/on-campus/bad-honnef-campus/"
+                          data-t-c="Sub Menu"
+                          data-t-a="click"
+                          data-t-l="SUB-Campus Bad Honnef"
+                          data-t4-eventname="menu"
+                          data-t4-type="sub"
+                          data-t4-position="Campus Locations"
+                          data-t4-label="Campus Bad Honnef"
+                        >
+                          Campus Bad Honnef
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/my-university/on-campus/on-campus-faq/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-On Campus FAQ"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="On Campus FAQ"
+                      data-t4-label="On Campus FAQ"
+                    >
+                      On Campus FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex relative items-center font-bold focus:outline-none transition ease-in-out duration-150 min-h-13 xl:min-h-0 xl:h-auto px-8 xl:p-0 py-2 z-10 border-b border-gray-50 xl:border-0 text-black lg:hover:text-gray-700"
+                      href="/en-in/my-university/study-in-germany/"
+                      data-level="2"
+                      data-t-c="Sub Menu"
+                      data-t-a="click"
+                      data-t-l="SUB-Why Germany? Study at the Home of IU"
+                      data-t4-eventname="menu"
+                      data-t4-type="sub"
+                      data-t4-position="Why Germany? Study at the Home of IU"
+                      data-t4-label="Why Germany? Study at the Home of IU"
+                    >
+                      Why Germany? Study at the Home of IU
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <template x-teleport=".header-icon-container">
+        <button
+          class="iu-nav-button inline-flex items-center justify-center focus:outline-none text-black xl:hidden"
+          aria-label="Open/Close navigation"
+          x-data="{ open: false }"
+          x-on:click.prevent="toggleNav()"
+          x-on:open-nav.window="open = true"
+          x-on:close-nav.window="open = false"
+        >
+          <svg
+            class="iu-hamburger w-10 h-10"
+            x-bind:class="{ 'open': open }"
+            viewBox="0 0 100 100"
+          >
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </template>
+    </div>
+    <div class="header-icon-container flex space-x-3 ml-auto xl:ml-0">
+      <button
+        class="focus:outline-none"
+        aria-label="Open search"
+        data-t-c="Main Menu"
+        data-t-a="click"
+        data-t-l="Search"
+        data-t4-eventname="menu"
+        data-t4-type="main"
+        data-t4-label="search"
+      >
+        <svg
+          width="20"
+          height="20"
+          data-t-c="Main Menu"
+          data-t-a="click"
+          data-t-l="Search"
+          data-t4-eventname="menu"
+          data-t4-type="main"
+          data-t4-label="search"
+          class="h-10 w-10 p-2 fill-current fill-black hover:text-gray-500"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="currentColor"
+            d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="header-buttons bg-white flex justify-center items-center space-x-2 sm:space-x-4 absolute xl:relative left-0 right-0 top-20 xl:top-auto xl:ml-auto px-2 sm:px-6 lg:px-8 xl:px-0 shadow xl:shadow-none border-t xl:border-0 border-gray-400 h-16 xl:h-auto"
+      x-init="hasCtaButton = true"
+    >
+      <a
+        class="button button--secondary button--small w-2/5 md:w-auto text-center"
+        href="https://www.iu.org/en-in/application/mm/"
+        data-pass-params="true"
+        data-t-c="Application CTA Button"
+        data-t-a="click"
+        data-t-l="Application Header"
+        data-t4-eventname="cta"
+        data-t4-type="application"
+        data-t4-position="header"
+      >
+        Apply now
+      </a>
+
+      <a
+        class="button button--primary button--small w-3/5 md:w-auto text-center"
+        href="#leadform"
+        data-pass-params="false"
+        data-t-c="Info Brochure CTA Button"
+        data-t-a="click"
+        data-t-l="Info Header"
+        data-t4-eventname="cta"
+        data-t4-type="infobrochure"
+        data-t4-position="header"
+      >
+        Request free information
+      </a>
+    </div>
+  </div>
+</header>

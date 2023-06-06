@@ -1,0 +1,10 @@
+@import '@glidejs/glide/src/assets/sass/glide.core';
+
+.cp-slider {
+  .glide__arrow {
+    @apply h-10 w-10 rounded-full bg-white mt-0 relative text-black opacity-70 hover:opacity-100;
+    &::after {
+      @apply text-2xl;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin area-title {
+  &.has-title {
+    @apply pt-16;
+  }
+}
+
+.area {
+  &:not(.has-slope-tl):not(.has-slope-tr) {
+    @apply -mt-px pt-px;
+
+    @include area-title;
+  }
+
+  &:not(.has-slope-br):not(.has-slope-bl) {
+    @apply -mb-px pb-px;
+
+    @include area-title;
+  }
+
+  > section:first-of-type {
+    @apply mt-0;
+  }
+}

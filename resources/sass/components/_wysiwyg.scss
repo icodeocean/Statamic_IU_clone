@@ -1,0 +1,139 @@
+.wysiwyg {
+  .ql-size-small {
+    @apply text-xs block;
+  }
+
+  .ql-size-large {
+    @apply text-xl font-bold block leading-snug pt-5;
+
+    @screen md {
+      @apply text-2xl pt-5;
+    }
+  }
+
+  .ql-size-huge {
+    @apply text-2xl font-bold block leading-snug;
+
+    @screen md {
+      @apply text-3xl;
+    }
+  }
+
+  h2,
+  table strong {
+    @apply text-2xl leading-9 tracking-widest;
+  }
+
+  a {
+    @apply underline;
+
+    &:hover {
+      @apply text-gray-700;
+    }
+  }
+
+  p {
+    @apply mb-3;
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  ul {
+    @apply list-disc pl-6 mb-3;
+
+    /* stylelint-disable-next-line selector-no-qualifying-type */
+    &.check-list {
+      @apply list-none pl-0;
+
+      li {
+        @apply pl-8 mb-2 relative;
+
+        &::before {
+          content: '';
+          background-image: url('../static/icons/font-awesome/check-light.svg');
+
+          @apply bg-no-repeat bg-center inline-block absolute top-1 left-0 h-4 w-4;
+        }
+      }
+    }
+  }
+
+  ol {
+    @apply list-decimal pl-6 mb-3;
+  }
+
+  table {
+    @apply w-full mx-auto mb-6;
+
+    @screen lg {
+      @apply mb-14;
+    }
+
+    a {
+      @apply no-underline text-gray-900;
+
+      &:hover {
+        @apply font-semibold text-gray-900;
+
+        svg {
+          @apply text-gray-900;
+        }
+      }
+    }
+
+    tr {
+      @apply border-b;
+
+      &:first-child {
+        @apply border-t-0;
+      }
+
+      &:nth-child(2) {
+        @apply border-t-0;
+      }
+    }
+
+    td,
+    th {
+      @apply text-center py-2.5;
+
+      &:first-child {
+        @apply text-left;
+      }
+
+      p {
+        @apply m-0;
+      }
+    }
+
+    th {
+      @apply text-xs md:text-base;
+
+      &:first-child {
+        @apply text-base md:text-2xl;
+      }
+    }
+  }
+
+  .programs-table {
+    @apply mb-0;
+
+    thead tr {
+      @apply border-b-2;
+    }
+  }
+
+  table {
+    &:not(.programs-table) {
+      tr {
+        @apply border-gray-400;
+      }
+    }
+  }
+
+  .ql-align-center {
+    @apply text-center;
+  }
+}
